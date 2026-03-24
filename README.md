@@ -48,7 +48,7 @@ A modern starter for building **fullstack applications (API + Frontend)** using 
 ## 🚀 Quick Start
 
 ```bash
-git clone https://github.com/your-repo/template-project.git
+git clone https://github.com/MagisterLysaGlowa/fullstack-app-template.git
 cd template-project
 
 docker-compose up -d --build
@@ -57,8 +57,8 @@ docker-compose up -d --build
 The application will be available at:
 
 * Frontend: http://localhost:3000
-* API: http://localhost:8000/api
-* Swagger: http://localhost:8000/api/docs
+* API: http://localhost:8080/api
+* pgadmin: http://localhost:5050
 
 ---
 
@@ -67,7 +67,6 @@ The application will be available at:
 The backend is built with Symfony and API Platform, providing:
 
 * automatic REST/GraphQL endpoint generation
-* Swagger/OpenAPI documentation
 * data validation
 * integration with Doctrine ORM
 
@@ -146,13 +145,13 @@ Use `.env` files:
 ### Backend (`backend/.env`)
 
 ```
-DATABASE_URL=postgresql://user:password@db:5432/app
+DATABASE_URL="postgresql://symfony:symfony@database:5432/symfony_db?serverVersion=15&charset=utf8"
 ```
 
 ### Frontend (`frontend/.env`)
 
 ```
-API_BASE_URL=http://localhost:8000/api
+API_BASE_URL=http://localhost:8080/api
 ```
 
 ---
